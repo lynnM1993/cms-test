@@ -1,0 +1,24 @@
+<div class="login">
+  <div class="login-form">
+      <div class="logo">
+          <img src="../../../assets/images/logo.png"/>
+          <span class="title">全平台后台系统</span>
+      </div>
+      <div class="login-tip">
+          {{ prompt }}
+      </div>
+      <div class="login-input">
+          <el-input [(ngModel)]="userName" (input)="reportPassword()" placeholder="请输入工号或用户名"></el-input>
+      </div>
+      <div class="login-input">
+          <el-input [(ngModel)]="password"  native-type="password" placeholder="请输入密码"></el-input>
+      </div>
+      <div class="login-input">
+          <el-checkbox [(ngModel)]="snapshot" (modelChange)="reportPassword($event)">记住密码</el-checkbox>
+      </div>
+      <div>
+          <div style="width: 150px;height: 1px;color:red;text-align: center;position: relative;bottom: 20px">{{err}}</div>
+          <el-button :type="'warn'" class="btn-width" on-click="login()">登录</el-button>
+      </div>
+  </div>
+</div>

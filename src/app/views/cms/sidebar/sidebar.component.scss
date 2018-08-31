@@ -1,0 +1,15 @@
+.menu-list{
+    padding-left:15px;
+    width:100%;
+    cursor: pointer;
+    margin-top:15px;
+
+    .hidden-menu{
+        display:none;
+        padding-left:20px;
+    }
+    .show-menu{
+        padding-left:20px;
+        display:block;
+    }
+}

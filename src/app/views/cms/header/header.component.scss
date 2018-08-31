@@ -1,0 +1,38 @@
+$img-margin-left:20px;
+$title-margin-left:20px;
+
+.header-box{
+    position: fixed;
+    top:0;
+    left:0;
+    height:49px;
+    width:100%;
+    background:#fff;
+    box-shadow:0 0 8px rgba(0,0,0,0.2);
+    .logo{
+        display :block;
+        height :100%;
+        margin-left:20px;
+        &:before{
+            content: '';
+            display :inline-block;
+            height :100%;
+            vertical-align :middle;
+            font-size: 0;
+            white-space :0;
+        }
+        > .img{
+            display :inline-block;
+            margin-left: $img-margin-left;
+            vertical-align :middle;
+        }
+        > .title{
+            display: inline-block;
+            margin-left: $title-margin-left;
+            font-family :"Microsoft YaHei UI";
+            font-size :18px;
+            letter-spacing: 1.5px;
+            vertical-align :middle;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+
+$imgs:"../../../assets/images";
+$form-left:62%;
+$form-padding:50px;
+$form-top:12%;
+$input-bottom:20px;
+$input-width:100%;
+$input-height:30px;
+$m-l:24px;
+
+.login{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:url($imgs +  "/login_bg.jpg") center no-repeat;
+    background-size:100% 100%;
+  
+    >.login-form{
+        display:block;
+        width:386px;
+        vertical-align :middle;
+        margin-left :$form-left;
+        margin-top:$form-top;
+        padding :$form-padding;
+        border-radius :5px;
+        background-color: #ffffff;
+        box-shadow:0 0 12px #d9d9d9;
+      .login-tip{
+        display :block;
+        padding-left :10px;
+        margin-bottom :5px;
+        color: red;
+      }
+  
+      >.logo{
+        display:block;
+        height :100%;
+        margin-bottom: 42px;
+        > .title{
+            display :inline-block;
+            font-size :32px;
+            line-height:32px;
+            font-weight: 600;
+            font-family:"Helvetica Neue", Helvetica, Arial, sans-serif, '\5FAE\8F6F\96C5\9ED1';
+            color: #535353;
+            vertical-align: middle;
+        }
+        > img{
+            display:inline-block;
+            // margin-left:$img-margin-left;
+            vertical-align:middle;
+
+        }
+        
+
+      }
+        
+      >.login-input{
+        display: block;
+        width:$input-width;
+        margin-bottom:$input-bottom;
+        height :$input-height;
+        position: relative;
+        >.form-control{
+            display: block;
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+            
+        >input[type="checkbox" i]{
+            position: absolute;
+        }
+        >.checkLable{
+            position:absolute;
+            margin-left:$m-l;
+            top:2px;
+        }
+        
+      }
+    }
+        
+}
+ 
+.btn-width{
+    width:85%;
+}
+
+
+
+//background url("../../assets/imgs/login.jpg")
